@@ -82,7 +82,7 @@ protected:
     {
         if (rawData.HasMember(key) && rawData[key].IsNumber())
         {
-            return rawData[key].GetDouble(); // cocos can not support GetFloat();
+            return rawData[key].GetFloat();
         }
 
         return defaultValue;
@@ -117,7 +117,7 @@ protected:
     {
         if (rawData.Size() > index)
         {
-            return rawData[(int) index].GetDouble();
+            return rawData[(int) index].GetFloat();
         }
 
         return defaultValue;
