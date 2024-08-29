@@ -359,7 +359,7 @@ void BaseFactory::addDragonBonesData(DragonBonesData* data, const std::string& n
     const auto& mapName = !name.empty()? name : data->name;
     if (_dragonBonesDataMap.find(mapName) != _dragonBonesDataMap.cend())
     {
-        if (_dragonBonesDataMap[name] == data) 
+        if (_dragonBonesDataMap[mapName] == data)
         {
             return;
         }
